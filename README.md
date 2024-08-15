@@ -18,7 +18,9 @@ An asynchrious Python tool to query Leakpeek for user data like emails, username
     ```
 2. Install dependencies:
     ```sh
-    pip install aiohttp faker
+    pip install faker
+    pip install aiohttp
+    pip install asyncio
     ```
 
 ## Setup
