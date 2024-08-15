@@ -1,13 +1,14 @@
 # LeakpeekController
 
-An async Python tool to query the Leakpeek API for user data like emails, usernames, and more.
+An asynchrious Python tool to query Leakpeek for user data like emails, usernames, and more.
 
 ## Features
 
-- **Automated Data Lookup**: Fetch information based on various query types.
+- **Automated Data Lookup**: Fetch information based on various query types using asynchrious requests.
+- **Supports**: multiple search types (username, email, password, etc.)
 - **Queue Management**: Handles requests efficiently with a queue.
-- **Custom Headers**: Personalize request headers easily.
 
+  
 ## Installation
 
 1. Clone the repository:
@@ -22,12 +23,11 @@ An async Python tool to query the Leakpeek API for user data like emails, userna
 
 ## Setup
 
-1. Replace `self.cookie` in `LeakpeekController` with your session cookie.
-2. Customize request headers in `self.headers` as needed.
+1. Replace `self.cookie` in `LeakpeekController` with your session cookie once you have logged in.
 
 ## Usage
 
-Run the bot and use `GetRequest("email", "test@gmail.com")` to query data.
+Run the bot and use `GetRequest("email", "test@gmail.com")` to query data, having the first parameter as the endpoint modification and the last parameter as the query you want to search within the category endpoint.
 
 ## License
 
