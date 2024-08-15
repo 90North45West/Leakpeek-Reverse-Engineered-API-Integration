@@ -105,7 +105,7 @@ class LeakpeekController:
                 self.queue.task_done()
                 continue
 
-            urls = self.construct(option, identifier, timestamp, query)
+            urls = self.Construct(option, identifier, timestamp, query)
             results = await self.MakeRequests(urls)
 
             filtered_results = []
@@ -123,7 +123,7 @@ class LeakpeekController:
 
         self.isProcessing = False
 
-    def construct(self, option, identifier, timestamp, query):
+    def Construct(self, option, identifier, timestamp, query):
         urls = []
 
         if option in self.endpoints:
