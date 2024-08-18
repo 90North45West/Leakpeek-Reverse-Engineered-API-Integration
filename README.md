@@ -1,4 +1,4 @@
-# LeakpeekController
+# Leakpeek Reverse Engineered API Integration
 
 An asynchrious Python tool to query Leakpeek for user data like emails, usernames, and more.
 
